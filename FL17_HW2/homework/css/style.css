@@ -1,0 +1,215 @@
+@media print {
+    h2.tm-section-title {
+        color: blue;
+    }
+    .tm-sidebar,
+    section:not(:first-of-type),
+    ul.boxes.gallery-container {
+        display: none;
+    }
+    p.tm-section-description:first-of-type {
+        font-style: italic;
+    }
+    p.tm-section-description::first-letter {
+        padding-left: 20px;
+        font-size: 30px;
+        color: #a9daea;
+        font-weight: 500;
+    }
+    .tm-team-description-container.flex-item {
+        width: 100% !important;
+    }
+    .tm-team-description-container {
+        float: left;
+        margin-right: 0;
+        padding-left: 60px;
+        padding-right: 20px;
+        width: 65%;
+    }
+    .tm-team-description-container+.flex-item img {
+        float: right;
+        width: 100%;
+        padding-top: 130px;
+    }
+    .tm-footer {
+        margin-top: -80px;
+    }
+    footer.tm-footer p::first-letter {
+        color: #a9daea;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .tm-main-content {
+        width: 80%;
+        margin: auto;
+    }
+    .tm-banner-inner {
+        padding: 50px 0;
+    }
+    .tm-banner-text::first-letter {
+        color: #a9daea;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .tm-team-description-container::before {
+        display: none;
+    }
+}
+
+.box-bg:hover {
+    background-color: #87cefa;
+}
+
+.box-bg:hover h2.tm-section-title {
+    color: white;
+    font-weight: 500;
+}
+
+p:not(.tm-banner-text)::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+nav,
+div#home,
+.tm-content-box,
+div#about,
+section.blocks {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+section.blocks .tm-content-box:nth-child(2) {
+    box-shadow: none;
+}
+
+.tm-banner {
+    background-color: #f5f5f5;
+}
+
+.tm-banner-inner {
+    background-color: white;
+}
+
+.flex-2-col {
+    display: flex;
+}
+
+.tm-team-description-container.flex-item {
+    width: 40%;
+}
+
+.flex-item {
+    width: 100%;
+}
+
+.tm-team-description-container::before {
+    content: '';
+    position: absolute;
+    border: 40px solid transparent;
+    border-left: 150px solid #87cefa;
+    border-top: 0px solid #87cefa;
+    margin: -40px;
+}
+
+section.heading.tm-content-box::before,
+section#ideas::before,
+section:last-of-type::before {
+    content: '';
+    position: absolute;
+    border: 40px solid transparent;
+    border-left: 150px solid #87cefa;
+    border-top: 0px solid #87cefa;
+}
+
+.flex-item img {
+    width: inherit;
+}
+
+div#tmCarousel h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+.tm-team-description-container p {
+    line-height: 30px;
+}
+
+.tm-team-description-container p::first-letter {
+    padding-left: 30px;
+}
+
+section.heading.tm-content-box a {
+    color: black;
+}
+
+section.heading.tm-content-box a:hover {
+    color: lightskyblue;
+    border-bottom: 1px solid lightskyblue;
+    text-decoration: underline;
+}
+
+section.heading.tm-content-box a:visited {
+    text-decoration: underline;
+}
+
+a.text::after {
+    content: "New";
+    font-size: 11px;
+    margin-left: 0.1%;
+    color: red;
+    position: absolute;
+    margin-bottom: 2px;
+}
+
+section.blocks .box {
+    padding: 10px;
+}
+
+section.blocks .box p::first-letter {
+    color: black;
+    font-size: 30px;
+}
+
+section.blocks .box p {
+    color: #787878;
+}
+
+section.blocks .box:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+button.btn.btn-primary.submit-btn {
+    padding: 15px 50px;
+    border-radius: 0%;
+    float: right;
+}
+
+button.btn.btn-primary.submit-btn:hover {
+    background-color: #9fd8fb;
+    color: #d5e7fb;
+    border-color: #9fd8fb;
+}
+
+.mandatory-field:after {
+    content: "*";
+    color: red;
+    font-weight: 600;
+}
+
+.tm-nav-item-link:hover {
+    background-color: #f5f5f5;
+}
+
+section.heading.tm-content-box h2 {
+    color: lightskyblue;
+}
+
+section.blocks p::first-letter {
+    color: black;
+}
