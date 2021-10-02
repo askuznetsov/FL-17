@@ -22,4 +22,7 @@ do {
 
 var total = initialAmount * Math.pow(1 + percentage / 100, years);
 
-alert('Total: ' + total);
+alert('Initial amount: ' + initialAmount +
+    '\nNumber of years: ' + years +
+    '\nPercentege of year:' + percentage +
+    '\n' + '\n' + 'Total amount: ' + total);
