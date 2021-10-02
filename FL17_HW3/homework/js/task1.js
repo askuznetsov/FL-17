@@ -21,8 +21,10 @@ do {
 } while (isNaN(percentage) || (percentage > 100));
 
 var total = initialAmount * Math.pow(1 + percentage / 100, years);
+var profit = total - initialAmount;
 
 alert('Initial amount: ' + initialAmount +
     '\nNumber of years: ' + years +
     '\nPercentege of year:' + percentage +
-    '\n' + '\n' + 'Total amount: ' + total);
+    '\n' + '\n' + '\nTotal profit: ' + profit +
+    '\nTotal amount: ' + total);
