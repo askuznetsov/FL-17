@@ -19,3 +19,7 @@ do {
         alert('Invalid input data');
     }
 } while (isNaN(percentage) || (percentage > 100));
+
+var total = initialAmount * Math.pow(1 + percentage / 100, years);
+
+alert('Total: ' + total);
