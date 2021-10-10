@@ -1,7 +1,8 @@
 function reverseNumber(num) {
-    if (typeof(num) !== 'number')
+    if (typeof(num) !== 'number') {
         return (false);
-    if (num == 0)
+    }
+    if (num === 0)
         return 0;
     if (num < 0) {
         var sign = true;
