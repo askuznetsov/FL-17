@@ -120,15 +120,16 @@ function addThousandsSeparators(strOrNum) {
 }
 
 function getAllUrlsFromText(s) {
-    if (!s) {
-        return console.error('error');
-    }
-
-    let urlRegex = /(https?:\/\/[^\s]+)/g;
-    let links = s.match(urlRegex);
-    if (links === null) {
-        return [];
-    } else {
-        return links;
+    try {
+        let urlRegex = /(https?:\/\/[^\s]+)/g;
+        let links = s.match(urlRegex);
+        if (links === null) {
+            return [];
+        } else {
+            return links;
+        }
+    } catch (error) {
+        error.message = 'error';
+        return error.message;
     }
 }
