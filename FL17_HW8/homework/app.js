@@ -33,6 +33,10 @@ const tbody = document.createElement('tbody');
 const byRegion = document.createTextNode('By Region');
 const byLanguage = document.createTextNode('By Language');
 
+let checkedByLanguage = false;
+let checkedByRegion = false;
+
+
 let selectedBy = 'By Region';
 
 
@@ -58,10 +62,6 @@ function createLayout() {
 }
 
 createLayout();
-
-
-
-
 
 
 
@@ -100,7 +100,10 @@ function createFirstSection() {
     input.addEventListener('click', () => {
         selectedBy = 'By Region';
         createListForDropdown(selectedBy);
-        input.setAttribute('selected', '');
+        checkedByRegion = document.getElementById('title_1').checked;
+        if (checkedByRegion) {
+            checkedByLanguage = false;
+        }
     });
 
 
@@ -119,6 +122,10 @@ function createFirstSection() {
     input2.addEventListener('click', () => {
         selectedBy = 'By Language';
         createListForDropdown(selectedBy);
+        checkedByLanguage = document.getElementById('title_2').checked;
+        if (checkedByLanguage) {
+            checkedByRegion = false;
+        }
     })
 }
 
@@ -231,6 +238,20 @@ function renderTableByLanguage(option) {
     })
 }
 
+function renderBySelectedValue() {
+    tbody.innerHTML = '';
+    if (checkedByRegion) {
+        renderTableByRegion(select['value']);
+    } else if (checkedByLanguage) {
+        renderTableByLanguage(select['value']);
+    }
+}
+
+function onclickSelectedValueEvent() {
+    select['value'].addEventListener('click', () => {
+        renderBySelectedValue();
+    })
+}
 /*
 write your code here
 
