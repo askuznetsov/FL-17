@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+th {
+    background-color: forestgreen;
+    border: 1px solid #D0D0CE;
+    padding: 24px;
+}
+
+tr {
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+tr:nth-child(2n) {
+    background-color: gainsboro;
+}
+
+td {
+    padding: 0 12px;
+}
+
+img {
+    width: 100%;
+}
