@@ -98,14 +98,14 @@ function createFirstSection() {
     input.setAttribute('id', 'title_1');
     input.setAttribute('name', 'title');
     input.setAttribute('value', 'By Region');
-    input.addEventListener('click', () => {
+    input.addEventListener('change', () => {
         selectedBy = 'By Region';
         createListForDropdown(selectedBy);
         checkedByRegion = document.getElementById('title_1').checked;
         if (checkedByRegion) {
             checkedByLanguage = false;
         }
-        renderTable();
+        select['value'] = 'Select value';
         renderBySelectedValue();
     });
 
@@ -122,14 +122,14 @@ function createFirstSection() {
     input2.setAttribute('id', 'title_2');
     input2.setAttribute('name', 'title');
     input2.setAttribute('value', 'By Language');
-    input2.addEventListener('click', () => {
+    input2.addEventListener('change', () => {
         selectedBy = 'By Language';
         createListForDropdown(selectedBy);
         checkedByLanguage = document.getElementById('title_2').checked;
         if (checkedByLanguage) {
             checkedByRegion = false;
         }
-        renderTable();
+        select['value'] = 'Select value';
         renderBySelectedValue();
     })
 }
@@ -173,11 +173,12 @@ function createListForDropdown(selectedBy) {
 }
 
 function renderTable() {
+    tbody.innerText = '';
     if (select['value'] === 'Select value') {
         appRoot.appendChild(table);
         table.setAttribute('id', 'notSelected');
-        table.appendChild(tbody);
         tbody.innerText = 'No items, please choose search query';
+        table.appendChild(tbody);
     } else {
         appRoot.appendChild(table);
         table.appendChild(tr);
@@ -256,7 +257,10 @@ function renderTableByLanguage(option) {
 }
 
 function renderBySelectedValue() {
-    tbody.innerHTML = '';
+    table.innerHTML = '';
+    if (select['value']) {
+        renderTable();
+    }
     if (checkedByRegion) {
         renderTableByRegion(select['value']);
     } else if (checkedByLanguage) {
@@ -265,7 +269,7 @@ function renderBySelectedValue() {
 }
 
 function onclickSelectedValueEvent() {
-    option.addEventListener('click', () => {
+    select.addEventListener('change', () => {
         renderBySelectedValue();
     })
 }
