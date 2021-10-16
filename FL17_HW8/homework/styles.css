@@ -43,3 +43,9 @@ td {
 img {
     width: 100%;
 }
+
+#notSelected {
+    text-align: center;
+    margin-top: 24px;
+    width: 100%;
+}

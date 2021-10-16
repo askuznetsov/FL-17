@@ -29,6 +29,7 @@ const th5 = document.createElement('th');
 const th6 = document.createElement('th');
 const td = document.createElement('td');
 const tbody = document.createElement('tbody');
+const div = document.createElement('div');
 
 const byRegion = document.createTextNode('By Region');
 const byLanguage = document.createTextNode('By Language');
@@ -58,7 +59,9 @@ function createLayout() {
 
     createSecondSection();
 
-    renderTable();
+    //renderTable();
+
+    onclickSelectedValueEvent();
 }
 
 createLayout();
@@ -104,6 +107,8 @@ function createFirstSection() {
         if (checkedByRegion) {
             checkedByLanguage = false;
         }
+        renderTable();
+        renderBySelectedValue();
     });
 
 
@@ -126,6 +131,8 @@ function createFirstSection() {
         if (checkedByLanguage) {
             checkedByRegion = false;
         }
+        renderTable();
+        renderBySelectedValue();
     })
 }
 
@@ -145,6 +152,11 @@ function createSecondSection() {
 function createListForDropdown(selectedBy) {
     select.removeAttribute('disabled', '');
     select.innerHTML = '';
+    const option = document.createElement('option');
+    option.setAttribute('value', 'Select value');
+    option.innerText = 'Select value';
+    select.appendChild(option);
+
     if (selectedBy === 'By Region') {
         externalService.getRegionsList().forEach(element => {
             const option = document.createElement('option');
@@ -163,23 +175,30 @@ function createListForDropdown(selectedBy) {
 }
 
 function renderTable() {
-    appRoot.appendChild(table);
-    table.appendChild(tr);
-    tr.appendChild(th1);
-    tr.appendChild(th2);
-    tr.appendChild(th3);
-    tr.appendChild(th4);
-    tr.appendChild(th5);
-    tr.appendChild(th6);
+    if (select['value'] === 'Select value') {
+        appRoot.appendChild(table);
+        table.setAttribute('id', 'notSelected');
+        table.appendChild(tbody);
+        tbody.innerText = 'No items, please choose search query';
+    } else {
+        appRoot.appendChild(table);
+        table.appendChild(tr);
+        tr.appendChild(th1);
+        tr.appendChild(th2);
+        tr.appendChild(th3);
+        tr.appendChild(th4);
+        tr.appendChild(th5);
+        tr.appendChild(th6);
 
-    th1.innerText = 'Country Name';
-    th2.innerText = 'Capital';
-    th3.innerText = 'World Region';
-    th4.innerText = 'Languages';
-    th5.innerText = 'Area';
-    th6.innerText = 'Flag';
+        th1.innerText = 'Country Name';
+        th2.innerText = 'Capital';
+        th3.innerText = 'World Region';
+        th4.innerText = 'Languages';
+        th5.innerText = 'Area';
+        th6.innerText = 'Flag';
 
-    table.appendChild(tbody);
+        table.appendChild(tbody);
+    }
 }
 
 function renderTableByRegion(option) {
@@ -248,10 +267,14 @@ function renderBySelectedValue() {
 }
 
 function onclickSelectedValueEvent() {
-    select['value'].addEventListener('click', () => {
+    option.addEventListener('click', () => {
         renderBySelectedValue();
     })
 }
+
+
+
+
 /*
 write your code here
 
