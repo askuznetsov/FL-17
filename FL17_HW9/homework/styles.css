@@ -1,0 +1,30 @@
+/* START: Task 1 Styles */
+
+
+table {
+    border: black 1px solid;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+    height: auto;
+    text-align: center;
+}
+
+.active {
+    background-color: green;
+}
+
+
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+
+/* END: Task 3 Styles */
