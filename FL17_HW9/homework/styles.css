@@ -3,20 +3,30 @@
 
 table {
     border: black 1px solid;
-    width: 350px;
-    height: 350px;
     margin: auto;
 }
 
 td {
     border: 1px solid black;
-    height: auto;
+    height: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
+
 
 .active {
     background-color: green;
 }
+
+.grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 
 
 /* END: Task 1 Styles */
