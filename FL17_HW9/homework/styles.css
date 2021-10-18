@@ -14,12 +14,23 @@ td {
     justify-content: center;
     align-items: center;
     padding: 24px;
+    background-color: white;
 }
 
 
-.active {
+
+
+.activeFirst td {
+    background-color: blue;
+}
+
+tr .active {
+    background-color: yellow;
+}
+
+/*tr td.activeGreen {
     background-color: green;
-}
+}*/
 
 .grid {
     display: grid;
