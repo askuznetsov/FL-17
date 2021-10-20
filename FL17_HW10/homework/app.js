@@ -51,5 +51,6 @@ function addLi() {
     li.appendChild(btnLike);
 
     btnRemove.classList.add('buttons');
+    btnRemove.classList.add('m_left');
     btnLike.classList.add('buttons');
 }
