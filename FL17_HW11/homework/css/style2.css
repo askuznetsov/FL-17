@@ -51,6 +51,15 @@ body {
     justify-content: space-around; }
     .section_banner_heading {
       color: black; }
+      .section_banner_heading:after {
+        content: "";
+        background-color: #4997cf;
+        height: 24px;
+        width: 35px;
+        z-index: -1;
+        display: block;
+        margin-top: -22px;
+        margin-left: 58px; }
     .section_banner_button {
       align-self: center;
       justify-content: center;
