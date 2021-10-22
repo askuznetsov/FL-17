@@ -1,0 +1,198 @@
+// Write your styles here
+@import "variables1";
+
+body {
+    margin: 0;
+    background: $contentBackground;
+    font-family: Fresca;
+}
+
+.section {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_text {
+        font-size: 32px;
+        z-index: 0;
+
+        &:after {
+            content: "";
+            background-color: #4997cf;
+            height: 4%;
+            width: 8%;
+            position: absolute;
+            left: 50.6%;
+            top: 107%;
+            z-index: -1;
+        }
+    }
+
+    &_card {
+        margin-bottom: 24px;
+        display: flex;
+        padding: 20px;
+        background-color: $cardColor;
+        justify-content: space-around;
+
+        &_right_container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_heading {
+            font-weight: 600;
+            color: $mainTextColorHeader;
+        }
+
+        &_text {
+            width: 80%;
+            color: $mainTextColor;
+            font-weight: 300;
+        }
+    }
+
+    &_link {
+        color: $linkColor;
+
+        &:hover {
+            color: $mainTextColorHeader;
+        }
+    }
+
+    &_banner {
+        width: 100%;
+        background: linear-gradient(to right, $btnColor, $hBlock);
+        display: flex;
+        justify-content: space-around;
+
+        &_heading {
+            color: $bannerText;
+        }
+
+        &_button {
+            height: 10%;
+            align-self: center;
+            justify-content: center;
+            background-color: $btnColor;
+            color: $btnTextColor;
+            padding: 12px 24px; 
+            border-radius: 4px;
+            border: 1px transparent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &_text {
+            color: $mainTextColor;
+        }
+    }
+}
+
+.header {
+    background-image: url($hImg);
+    height: 500px;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0 0 30% 0;
+
+    &-wrap {
+        margin-left: 10%;
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & div:last-child {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &_heading {
+        font-size: 32px;
+        font-weight: 600;
+        width: 40%;
+        z-index: 0;
+        margin: 0;
+        
+        &::after {
+            content: "";
+            background-color: $hBlock;
+            height: 4%;
+            width: 7.7%;
+            position: absolute;
+            left: 9.8%;
+            top: 50.4%;
+            z-index: -1;
+        }
+    }
+
+    &_text {
+        font-size: 14px;
+        margin: 0;
+        color: darkgrey;
+        margin: -40px 0;
+    }
+
+    &_button {
+        background-color: $btnColor;
+        color: $btnTextColor;
+        padding: 12px 24px; 
+        border-radius: 4px;
+        border: 1px transparent;    
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .login {
+        color: $loginColor;
+    }
+}
+
+.landing-logo {
+    display: flex;
+
+    & p {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+
+        & span {
+            font-size: 12px;
+        }
+    }
+
+    & img {
+        width: 15%;
+        height: 80%;
+        align-self: center;
+    }
+}
+
+.footer {
+    background-color: $cardColor;
+    margin-top: -24px;
+    color: $btnTextColor;
+
+    &-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    &_logo {
+        width: 20%;
+    }
+}
