@@ -37,12 +37,12 @@ body {
         &:after {
             content: "";
             background-color: #4997cf;
-            height: 4%;
-            width: 8%;
-            position: absolute;
-            left: 50.6%;
-            top: 107%;
+            height: 30px;
+            width: 131px;
             z-index: -1;
+            display: block;
+            margin-top: -36px;
+            margin-left: 160px
         }
     }
 
@@ -133,13 +133,12 @@ body {
         
         &::after {
             content: "";
-            background-color: $hBlock;
-            height: 4%;
-            width: 7.7%;
-            position: absolute;
-            left: 9.8%;
-            top: 50.4%;
+            background-color: #4997cf;
+            height: 20px;
+            width: 124px;
             z-index: -1;
+            display: block;
+            margin-top: -26px;
         }
     }
 

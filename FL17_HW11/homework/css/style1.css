@@ -19,12 +19,12 @@ body {
     .section_text:after {
       content: "";
       background-color: #4997cf;
-      height: 4%;
-      width: 8%;
-      position: absolute;
-      left: 50.6%;
-      top: 107%;
-      z-index: -1; }
+      height: 30px;
+      width: 131px;
+      z-index: -1;
+      display: block;
+      margin-top: -36px;
+      margin-left: 160px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\0000349}}
   .section_card {
     margin-bottom: 24px;
@@ -109,19 +109,18 @@ body {
     .header_heading::after {
       content: "";
       background-color: #4997cf;
-      height: 4%;
-      width: 7.7%;
-      position: absolute;
-      left: 9.8%;
-      top: 50.4%;
-      z-index: -1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003146}}
+      height: 20px;
+      width: 124px;
+      z-index: -1;
+      display: block;
+      margin-top: -26px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003145}}
   .header_text {
     font-size: 14px;
     margin: 0;
     color: darkgrey;
     margin: -40px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003152}}
   .header_button {
     background-color: #219e21;
     color: white;
@@ -130,43 +129,43 @@ body {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px transparent; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003157}}
     .header_button:hover {
       cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003162}}
   .header .login {
     color: #D0D0CE; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\0000315}}
     .header .login:hover {
       color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003167}}
 .landing-logo, .landing-logo p {
   display: flex; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003170}}
   .landing-logo p {
     text-align: center;
     flex-direction: column;
     font-size: 24px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003176}}
     .landing-logo p span {
       font-size: 12px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003181}}
   .landing-logo img {
     width: 15%;
     height: 80%;
     align-self: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003188}}
 .footer {
   background-color: #443d33;
   margin-top: -24px;
   color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003193}}
   .footer-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/oleksandr\.kuznetsov\/Programming\/fl-17\/FL17_HW11\/homework\/scss\/_main\.scss}line{font-family:\00003199}}
   .footer_logo {
     width: 20%; }
