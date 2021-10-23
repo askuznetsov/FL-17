@@ -9,16 +9,16 @@
 }
 
 @mixin linksConfig {
-    color: $linkColor;
+    color: map-get($colors, linksColor);
 
     &:hover {
-        color: $mainTextColorHeader;
+        color: map-get($colors, subText);
     }
 }
 
 body {
     margin: 0;
-    background: $contentBackground;
+    background: map-get($colors, main);
     font-family: Fresca;
 }
 
@@ -32,10 +32,11 @@ body {
     &_text {
         font-size: 32px;
         z-index: 0;
+        color: map-get($colors, mainText);
 
         &:after {
             content: "";
-            background-color: $hBlock;
+            background-color: map-get($colors, additionSecond);
             height: 30px;
             width: 131px;
             z-index: -1;
@@ -49,7 +50,7 @@ body {
         margin-bottom: 24px;
         display: flex;
         padding: 20px;
-        background-color: $cardColor;
+        background-color: map-get($colors, subMain);;
         justify-content: space-around;
 
         &_right_container {
@@ -62,12 +63,12 @@ body {
 
         &_heading {
             font-weight: 600;
-            color: $mainTextColorHeader;
+            color: map-get($colors, linksColor);;
         }
 
         &_text {
             width: 80%;
-            color: $mainTextColor;
+            color: map-get($colors, subText);;
             font-weight: 300;
         }
     }
@@ -78,37 +79,39 @@ body {
 
     &_banner {
         width: 100%;
-        background: linear-gradient(to right, $btnColor, $hBlock);
+        background: linear-gradient(to right, map-get($colors, additionFirst), map-get($colors, additionSecond));
         display: flex;
         justify-content: space-around;
 
         &_heading {
-            color: $bannerText;
+            color: map-get($colors, mainText);
+            font-size: 24px;
 
             &:after {
                 content: "";
-                background-color: $hBlock;
+                background-color: map-get($colors, additionSecond);
                 height: 24px;
-                width: 35px;
+                width: 51px;
                 z-index: -1;
                 display: block;
-                margin-top: -22px;
-                margin-left: 58px;
+                margin-top: -24px;
+                margin-left: 87px;
             }
         }
 
         &_button {
             @include btnConfig();
-            background-color: $btnColor;
-            color: $btnTextColor;
+            background-color: map-get($colors, additionFirst);
+            color: map-get($colors, linksColor);
 
             &:hover {
                 cursor: pointer;
+                background-color: map-get($colors, additionFirstHover);
             }
         }
 
         &_text {
-            color: $mainTextColor;
+            color: map-get($colors, subText);
         }
     }
 }
@@ -140,10 +143,11 @@ body {
         width: 40%;
         z-index: 0;
         margin: 0;
+        color: map-get($colors, mainText);
         
         &::after {
             content: "";
-            background-color: $hBlock;
+            background-color: map-get($colors, additionSecond);
             height: 20px;
             width: 124px;
             z-index: -1;
@@ -155,17 +159,18 @@ body {
     &_text {
         font-size: 14px;
         margin: 0;
-        color: darkgrey;
+        color: map-get($colors, subText);
         margin: -40px 0;
     }
 
     &_button {
-        background-color: $btnColor;
-        color: $btnTextColor;
+        background-color: map-get($colors, additionFirst);
+        color: map-get($colors, linksColor);
         @include btnConfig();    
         
         &:hover {
             cursor: pointer;
+            background-color: map-get($colors, additionFirstHover);
         }
     }
 
@@ -182,6 +187,7 @@ body {
         text-align: center;
         flex-direction: column;
         font-size: 24px;
+        color: map-get($colors, mainText);
 
         & span {
             font-size: 12px;
@@ -196,9 +202,9 @@ body {
 }
 
 .footer {
-    background-color: $cardColor;
+    background-color: map-get($colors, subMain);
     margin-top: -24px;
-    color: $btnTextColor;
+    color: map-get($colors, subText);
 
     &-wrap {
     display: flex;
@@ -208,5 +214,9 @@ body {
 
     &_logo {
         width: 20%;
+
+        & p {
+            color: map-get($colors, footerLogo)
+        }
     }
 }

@@ -1,11 +1,14 @@
-$contentBackground : darkgrey;
 $hImg: "../img/m-h-night.jpg";
-$hBlock: orange;
-$btnColor: yellow;
-$btnTextColor: white;
-$loginColor: white;
-$mainTextColorHeader: white;
-$mainTextColor: #D0D0CE;
-$linkColor: #D0D0CE;
-$bannerText: black;
-$cardColor: rgb(68, 61, 51);
+
+$colors: (
+    main: rgb(33, 45, 45),
+    mainText: white,
+    subText: #D0D0CE,
+    subMain: rgb(60, 63,79),
+    additionFirst: rgb(219, 173, 59),
+    additionFirstHover: rgb(145, 114, 38),
+    additionSecond: rgb(236, 91, 65),
+    linksColor: white,
+    linksHover: #D0D0CE,
+    footerLogo: #D0D0CE
+);
