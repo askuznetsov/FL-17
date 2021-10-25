@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background: url(../img/apples.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+    border:none;
+    position: relative;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: -10px;
+    background-color: white;
+    transition: all ease-in-out .2s;
+  }
+
+  .nav a:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+.center {
+    align-self: center;
+}
+
+.mainText {
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+}
+
+.mainText span {
+    font-size: 74px;
+}
+
+.subText {
+    text-align: center;
+}
+
+.bottom {
+    align-self: center;
+}
+
+.button {
+    color: inherit;
+    padding: 12px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.someInformation {
+    padding: 160px 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.someInformation div {
+    flex-basis: 50%;
+}
+
+.left {
+    font-size: 18px;
+}
+
+.right {
+    font-size: 12px;
+}

@@ -1,3 +1,156 @@
+body {
+  margin: 0;
+  background: #212d2d;
+  font-family: Fresca; }
 
+.section {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section_text {
+    font-size: 32px;
+    z-index: 0;
+    color: white; }
+    .section_text:after {
+      content: "";
+      background-color: #ec5b41;
+      height: 30px;
+      width: 131px;
+      z-index: -1;
+      display: block;
+      margin-top: -36px;
+      margin-left: 160px; }
+  .section_card {
+    margin-bottom: 24px;
+    display: flex;
+    padding: 20px;
+    background-color: #3c3f4f;
+    justify-content: space-around; }
+    .section_card_right_container {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .section_card_heading {
+      font-weight: 600;
+      color: white; }
+    .section_card_text {
+      width: 80%;
+      color: #D0D0CE;
+      font-weight: 300; }
+  .section_link {
+    color: white; }
+    .section_link:hover {
+      color: #D0D0CE; }
+  .section_banner {
+    width: 100%;
+    background: linear-gradient(to right, #dbad3b, #ec5b41);
+    display: flex;
+    justify-content: space-around; }
+    .section_banner_heading {
+      color: white;
+      font-size: 24px; }
+      .section_banner_heading:after {
+        content: "";
+        background-color: #ec5b41;
+        height: 24px;
+        width: 51px;
+        z-index: -1;
+        display: block;
+        margin-top: -24px;
+        margin-left: 87px; }
+    .section_banner_button {
+      align-self: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 4px;
+      border: 1px transparent;
+      background-color: #dbad3b;
+      color: white; }
+      .section_banner_button:hover {
+        cursor: pointer;
+        background-color: #917226; }
+    .section_banner_text {
+      color: #D0D0CE; }
 
-/*# sourceMappingURL=style2.css.map */
+.header {
+  background-image: url("../img/m-h-night.jpg");
+  height: 500px;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 0 0 30% 0; }
+  .header-wrap {
+    margin-left: 10%;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .header-wrap div:last-child {
+      display: flex;
+      justify-content: space-between; }
+  .header_heading {
+    font-size: 32px;
+    font-weight: 600;
+    width: 40%;
+    z-index: 0;
+    margin: 0;
+    color: white; }
+    .header_heading::after {
+      content: "";
+      background-color: #ec5b41;
+      height: 20px;
+      width: 124px;
+      z-index: -1;
+      display: block;
+      margin-top: -26px; }
+  .header_text {
+    font-size: 14px;
+    margin: 0;
+    color: #D0D0CE;
+    margin: -40px 0; }
+  .header_button {
+    background-color: #dbad3b;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px transparent; }
+    .header_button:hover {
+      cursor: pointer;
+      background-color: #917226; }
+  .header .login {
+    color: white; }
+    .header .login:hover {
+      color: #D0D0CE; }
+
+.landing-logo, .landing-logo p {
+  display: flex; }
+  .landing-logo p {
+    text-align: center;
+    flex-direction: column;
+    font-size: 24px;
+    color: white; }
+    .landing-logo p span {
+      font-size: 12px; }
+  .landing-logo img {
+    width: 15%;
+    height: 80%;
+    align-self: center; }
+
+.footer {
+  background-color: #3c3f4f;
+  margin-top: -24px;
+  color: #D0D0CE; }
+  .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .footer_logo {
+    width: 20%; }
+    .footer_logo p {
+      color: #D0D0CE; }
