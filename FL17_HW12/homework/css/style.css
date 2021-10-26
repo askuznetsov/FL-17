@@ -96,6 +96,7 @@ a {
     padding: 12px 60px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid white;
+    margin-bottom: 40%;
 }
 
 .button:hover {
@@ -120,4 +121,75 @@ a {
 
 .right {
     font-size: 12px;
+}
+
+.mainInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    padding: 0 48px;
+}
+
+.secondMainText {
+    margin: 10% 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.text {
+    width: 40%;
+    text-align: center;
+    padding: 24px;
+}
+
+.item img {
+    width: 60%;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 48px;
+    background-color: white;
+    width: 100%;
+    padding: 48px 0;
+}
+
+.subscribeText {
+    width: 28%;
+    font-size: 32px;
+    margin-left: 24px;
+}
+
+.subscribeInput {
+    width: 62%;
+}
+
+.subscribeInput input {
+    padding: 24px;
+    width: 80%;
+}
+
+.subscribeButton {
+    padding: 24px;
+    background-color: rgb(54, 53, 53);
+    color: #D0D0CE;
+}
+
+.subscribeButton:hover {
+    background-color: black;
+    cursor: pointer;
 }
