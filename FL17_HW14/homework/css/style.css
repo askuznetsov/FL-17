@@ -3,3 +3,13 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar + .container {
+    flex-direction: column-reverse !important;
+  }
+
+  .navbar + .container div {
+    width: 100% !important;
+  }
+}
