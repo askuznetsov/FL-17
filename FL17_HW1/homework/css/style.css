@@ -1,24 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  box-sizing: border-box;
   padding: 12px 20%;
+  line-height: 32px;
+  background-color: #d0d0ce;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
 }
 
-.container > div {
+.content {
   flex-basis: 50%;
   padding: 5%;
+  flex-direction: column;
+}
+
+.more_space {
+  flex-basis: 66%;
+  padding: 5%;
+  flex-direction: column;
+}
+
+.less_space {
+  flex-basis: 33%;
 }
 
 .bg-main {
   background-color: #76cdd8;
 }
 
-.title {
+.main {
   font-size: 48px;
   color: white;
   display: flex;
@@ -26,4 +50,80 @@ body {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.title {
+  color: #76cdd8;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.button {
+  background-color: rgb(18, 124, 123);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  width: fit-content;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  align-self: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.img {
+  width: 70%;
+  border-radius: 50%;
+  height: 80%;
+}
+
+.img-full {
+  width: 100%;
+  height: 100%;
+}
+
+.padding-zero {
+  padding: 0;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+.description {
+  color: white;
+  font-size: 16px;
+}
+
+.card {
+  flex-basis: 33%;
+}
+
+.card_border {
+  padding: 5%;
+}
 /* Your code goes here */
