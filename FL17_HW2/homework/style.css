@@ -2,6 +2,40 @@
   --primary-color: #f2c744;
   --light: #f4f6f9;
   --dark: #000;
-  --primary-font: 'Shadows Into Light', cursive;
-  --secondary-font: 'Dancing Script', cursive;
+  --primary-font: "Shadows Into Light", cursive;
+  --secondary-font: "Dancing Script", cursive;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 20vh;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.bio {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
 }
