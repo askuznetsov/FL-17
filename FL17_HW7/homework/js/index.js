@@ -8,6 +8,6 @@ $(document).ready(function(){
       $("#display").val('');
     }); 
     $(".result").click(function(){
-      $("#display").val(eval($("#display").val()));
+      $("#display").val(Function('return' + $("#display").val()));
     });
   });
