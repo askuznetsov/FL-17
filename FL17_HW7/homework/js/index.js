@@ -1,13 +1,13 @@
 // Write your code here
 
 $(document).ready(function(){
-    $(".clc").click(function(){
-      $("#display").val($("#display").val() +$(this).val());
+    $('.clc').click(function(){
+      $('#display').val($('#display').val() +$(this).val());
     });
-    $(".clear").click(function(){
-      $("#display").val('');
+    $('.clear').click(function(){
+      $('#display').val('');
     }); 
-    $(".result").click(function(){
-      $("#display").val(Function('return' + $("#display").val()));
+    $('.result').click(function(){
+      $('#display').val(Function('return' + $('#display').val()));
     });
   });
