@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 const miniCss = require('mini-css-extract-plugin');
 module.exports = {
-   entry: '/js/styles.js',
+   entry: '/js/import.js',
    output: {
       filename: 'bundle.js'
    },
