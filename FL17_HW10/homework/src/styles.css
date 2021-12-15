@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
+
+
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+
+
+.buttons {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+div#tweetItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul#list li {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.m_left {
+    margin-left: 48px;
+}
