@@ -37,6 +37,10 @@ input {
   height: 95px;
   border-radius: 40px;
   border-width: 0;
+  transition: all 0.8s;
+}
+input:active {
+  background-color: aqua;
 }
 .finnalresult {
   background-color: #001010;
