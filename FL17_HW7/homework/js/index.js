@@ -4,6 +4,9 @@ let lastDigit = -1;
 
 $(document).ready(function () {
   $('.clc').click(function () {
+    if ($('#display').hasClass('red')) {
+      $('#display').removeClass('red');
+    }
     if (
       ($('#display').val().slice(lastDigit) === '*' ||
         $('#display').val().slice(lastDigit) === '/' ||
@@ -31,5 +34,9 @@ $(document).ready(function () {
   });
   $('.result').click(function () {
     $('#display').val(Function('return ' + $('#display').val()));
+    if ($('#display').val() === 'Infinity') {
+      $('#display').val('ERROR');
+      $('#display').addClass('red');
+    }
   });
 });

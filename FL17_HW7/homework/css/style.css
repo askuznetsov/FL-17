@@ -1,42 +1,47 @@
 /* Write your styles here */
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.main{
-    margin: auto;
-    background-color: #1f1f21;
-    width: 30%;
-    padding: 2%;
+.main {
+  margin: auto;
+  background-color: #1f1f21;
+  width: 30%;
+  padding: 2%;
 }
- #display{
-    width: 93%;
-    padding: 5px;
-    font-size: 55px;
-    color: black;
-    background-color: #fff;
-    text-align: right;
-    border: 1px solid black;
-    outline: none;
+#display {
+  width: 93%;
+  padding: 5px 24px;
+  margin-bottom: 24px;
+  font-size: 55px;
+  color: black;
+  background-color: #fff;
+  text-align: right;
+  border: 1px solid black;
+  outline: none;
 }
-.clear{
-    background-color: red;
-    color: #fff;
+.clear {
+  background-color: red;
+  color: #fff;
 }
- input{
-    background-color: #333;
-    color: #fff;
-    margin-top: 5px;
-    font-size: 25px;
-    width: 95px;
-    height: 95px;
-    border-radius: 40px;
-    border-width: 0;
-} 
-.finnalresult{
-    background-color: #001010;
+input {
+  background-color: #333;
+  color: #fff;
+  margin-top: 5px;
+  font-size: 25px;
+  width: 95px;
+  height: 95px;
+  border-radius: 40px;
+  border-width: 0;
+}
+.finnalresult {
+  background-color: #001010;
+}
+
+.red {
+  color: red !important;
 }
