@@ -1,6 +1,7 @@
 // Write your code here
 
 let lastDigit = -1;
+const input = jQuery('<input name="myname">');
 
 $(document).ready(function () {
   $('.clc').click(function () {
@@ -37,11 +38,20 @@ $(document).ready(function () {
     $('#display').val('');
   });
   $('.result').click(function () {
+    let log = $('#display').val();
+    console.log(log);
     $('#display').val(Function('return ' + $('#display').val()));
     if ($('#display').val() === 'Infinity') {
       $('#display').val('ERROR');
       $('#display').addClass('red');
     }
     $('#display').attr('result', true);
+    $('#logs').append(
+      '<div class="field"><div class="dot"></div> ' +
+        log +
+        ' = ' +
+        $('#display').val() +
+        '<div class="close">X</div></div>'
+    );
   });
 });
