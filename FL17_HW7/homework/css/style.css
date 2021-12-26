@@ -53,7 +53,7 @@ input:active {
 #logs {
   width: 30%;
   height: 400px;
-  margin: 24px auto;
+  margin: auto;
   overflow: auto;
 }
 
@@ -68,6 +68,10 @@ input:active {
 
 .dot:hover {
   border-color: red;
+}
+
+.close {
+  margin-right: 16px;
 }
 
 .close:hover {

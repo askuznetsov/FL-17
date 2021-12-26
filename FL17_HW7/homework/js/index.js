@@ -39,7 +39,6 @@ $(document).ready(function () {
   });
   $('.result').click(function () {
     let log = $('#display').val();
-    console.log(log);
     $('#display').val(Function('return ' + $('#display').val()));
     if ($('#display').val() === 'Infinity') {
       $('#display').val('ERROR');
@@ -53,5 +52,9 @@ $(document).ready(function () {
         $('#display').val() +
         '<div class="close">X</div></div>'
     );
+  });
+
+  $('#logs').scroll(function () {
+    console.log($('#logs .field'));
   });
 });
