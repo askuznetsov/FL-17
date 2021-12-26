@@ -7,6 +7,10 @@ $(document).ready(function () {
     if ($('#display').hasClass('red')) {
       $('#display').removeClass('red');
     }
+    if ($('#display').attr('result') === 'true') {
+      $('#display').attr('result', false);
+      $('#display').val('');
+    }
     if (
       ($('#display').val().slice(lastDigit) === '*' ||
         $('#display').val().slice(lastDigit) === '/' ||
@@ -38,5 +42,6 @@ $(document).ready(function () {
       $('#display').val('ERROR');
       $('#display').addClass('red');
     }
+    $('#display').attr('result', true);
   });
 });
